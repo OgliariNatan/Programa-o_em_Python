@@ -57,6 +57,7 @@ minha_lista_numero.remove(10)
 print(minha_lista_numero)
 
 #Tuplas
+<<<<<<< HEAD
 print("Tuplas usa-se o (), na lista usa-se o []")
 
 minha_tuplas = (1, 2, 3, 4), ("A")
@@ -87,3 +88,6 @@ if size_minha_string >= 0:
 else:
     print(size_minha_string)
     print("FIM")
+=======
+print("Tuplas usa-se o (), na lista usa-se o []")
+>>>>>>> origin/main
