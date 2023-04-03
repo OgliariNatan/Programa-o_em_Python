@@ -1,2 +1,2 @@
-# Programa-o_em_Python
+# Scripty em Python 
 Criado para a disciplina de python
