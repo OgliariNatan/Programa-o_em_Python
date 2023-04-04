@@ -23,3 +23,12 @@ sobrenome = "OGLIARI"
 verificação = impressao(nome, sobrenome)
 
 print(verificação)
+
+
+
+'''Ler arquivos '''
+
+arq=open("C:\Users\AULA-1\Documents\(Engenharia de Software)\Fase 1\Linguagem de Programação\Programa-o_em_Python\log.txt","r")
+conteudo = arq.read()
+print(f"O conteudo de log.txt e: \n {conteudo}")
+arq.close()
