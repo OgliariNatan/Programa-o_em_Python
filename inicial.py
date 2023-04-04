@@ -2,6 +2,7 @@
     Codigos iniciais em python
     quase que uma salada de frutas.
 '''
+import inspect
 print("Olá Mundo") #Impressão simples na tela
 
 #Impressões de string, letra por letra
@@ -57,7 +58,7 @@ minha_lista_numero.remove(10)
 print(minha_lista_numero)
 
 #Tuplas
-<<<<<<< HEAD
+
 print("Tuplas usa-se o (), na lista usa-se o []")
 
 minha_tuplas = (1, 2, 3, 4), ("A")
@@ -80,14 +81,29 @@ print(meu_dic["/"])
 print(minha_string)
 size_minha_string = len(minha_string)
 print(size_minha_string)
-x=0
-if size_minha_string >= 0:
-     print(minha_string[x])
-     --size_minha_string
-     ++x
-else:
-    print(size_minha_string)
-    print("FIM")
-=======
+
+for x in range (size_minha_string):
+    print("Entrou no for")
+    print(minha_string[x])
+
+for char in minha_string:
+    print("For com char")
+    print(char)
+
 print("Tuplas usa-se o (), na lista usa-se o []")
->>>>>>> origin/main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
