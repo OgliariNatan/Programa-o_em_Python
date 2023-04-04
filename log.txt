@@ -1,2 +1,2 @@
-teste, 123
-ver, 123
+teste
+ver

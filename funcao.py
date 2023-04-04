@@ -1,6 +1,6 @@
 import inspect
 import math
-
+import os
 
 '''
     Usado para exercitar funções
@@ -28,7 +28,14 @@ print(verificação)
 
 '''Ler arquivos '''
 
-arq=open("C:\Users\AULA-1\Documents\(Engenharia de Software)\Fase 1\Linguagem de Programação\Programa-o_em_Python\log.txt","r")
-conteudo = arq.read()
-print(f"O conteudo de log.txt e: \n {conteudo}")
-arq.close()
+with open("C:\Users\AULA-1\Documents\(Engenharia de Software)\Fase 1\Linguagem de Programação\Programa-o_em_Pythonlog.txt", "r") as arq:
+    for linha in arq:
+        print(linha)
+
+'''Escrever arquivos'''
+
+palavras = ["Código", "Python", "Verde", "Incrível"]
+
+with open("C:/Users/AULA-1/Documents/(Engenharia de Software)/Fase 1/Linguagem\ de\ Programação/Programa-o_em_Python/ logcv.txt", "w+") as arquivo:
+    for palavra in palavras:
+        arquivo.write(palavra + "\n")
