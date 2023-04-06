@@ -11,13 +11,14 @@ class Cachorro:
         self.nome = nome
         self.idade = idade
         self.raca = raca
-        self.date = date
+        self.date = data
+
 meu_cachorro = Cachorro()
 
 
 class Circulo:
     def __int__(self):
-        self.raio = raio
+        self.raio = Raio
 meu_circulo = Circulo()
 
 
@@ -27,5 +28,5 @@ meu_cachorro.raca = "Vira Lata"
 meu_cachorro.date = datetime.date.today()
 print(meu_cachorro.nome, meu_cachorro.idade, meu_cachorro.raca, meu_cachorro.date)
 
-print("DEFINIÇÃO DE MÉTODOS")
-
+print("DEFINIÇÃO DE MÉTODOS".title())
+print(f"O nome do meu cachorro é: {meu_cachorro.nome}\n A idade do meu cachorro é: {meu_cachorro.idade}\n Sua raça é: {meu_cachorro.raca}\n A data deste documento é: {meu_cachorro.date}")

@@ -15,9 +15,9 @@ IMC = float(peso) / math.pow ( float(altura) ,2) #Calcula o IMC
 print(f"Seu IMC é:  %.2f" %IMC)
 # Informa a sua situação
 if IMC < 17:
-  print("Seu peso esta MUITO abaixo do ideal")
+     print("Seu peso esta MUITO abaixo do ideal")
 elif IMC >= 17 and IMC < 18.49:
-  print("Você esta abaixo do peso")
+    print("Você esta abaixo do peso")
 elif IMC > 18.49 and IMC < 24.99:
     print("Peso Normal")
 elif IMC > 24.99 and IMC < 29.99:

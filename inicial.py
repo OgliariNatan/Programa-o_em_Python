@@ -40,9 +40,9 @@ print(minha_string.index("T"))# Imprime a posição da letra Informada, se possu
 #Listas
 
 minha_lista_letras = ["N","A","t","a","n"]
-minha_lista_numero = [1,2,3,4,5]
+minha_lista_numero = [1, 2, 3, 4, 5]
 
-minha_lista_aninhada = [1,2,3,4,5,6], ["a","o","p","b"]
+minha_lista_aninhada = [1, 2, 3, 4, 5, 6], ["a","o","p","b"]
 print(minha_lista_letras[2]) #Imprime o caracter no index informado
 print(minha_lista_aninhada[1]) #O index é para a lista em referencia
 
@@ -56,7 +56,8 @@ print(minha_lista_numero)
 print("remover um valor de uma lista com o método .remove()")
 minha_lista_numero.remove(10)
 print(minha_lista_numero)
-
+entrada = input('Digite uma entrada:')
+print(entrada.lower())
 #Tuplas
 
 print("Tuplas usa-se o (), na lista usa-se o []")
@@ -74,6 +75,9 @@ print(len(meu_dic))
 print(meu_dic["?"])
 meu_dic["/"] = "Diretorio usual"
 print(meu_dic["/"])
+
+print('Retorna uma lista do dicionario: ',meu_dic.keys())
+#print(meu_dic.keys())
 
 #Para excliur
 # del meu_dic["c"]
@@ -93,7 +97,28 @@ for char in minha_string:
 print("Tuplas usa-se o (), na lista usa-se o []")
 
 
+def create_report():
+    componentes_verificados = set(
+        ['caixas de som', 'cooler', 'dissipador de calor', 'cpu', 'hd', 'estabilizador', 'gabinete', 'hub',
+         'impressora', 'joystick', 'memória ram', 'microfone', 'modem', 'monitor', 'mouse', 'no-break',
+         'placa de captura', 'placa de som', 'placa de vídeo', 'placa mãe', 'scanner', 'teclado', 'webcam'])
 
+    componentes_com_defeito = set(['hd', 'monitor', 'placa de som', 'scanner'])
+
+    qtde_componentes_verificados = len(componentes_verificados)
+    qtde_componentes_com_defeito = len(componentes_com_defeito)
+
+    componentes_ok = componentes_verificados.difference(componentes_com_defeito)
+
+    print(f"Foram verificados {qtde_componentes_verificados} componentes.\n")
+    print(f"{qtde_componentes_com_defeito} componentes apresentaram defeito.\n")
+
+    print("Os componentes que podem ser vendidos são:")
+    for item in componentes_ok:
+        print(item)
+
+
+create_report()
 
 
 
