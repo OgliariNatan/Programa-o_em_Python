@@ -30,3 +30,57 @@ if lista_2[0] > lista_2[1]:
     lista_2[0], lista_2[1] = lista_2[1], lista_2[0]
 print('\nLista ordenada de forma mágica: ', lista_2, '\n')
 
+'''Função para ordenação de lista de ordem n'''
+
+def ordenar_selecao(lista):
+    n = len(lista)
+
+    for i in range(0, n):
+        index_menor = i
+        for j in range(i+1, n):
+            if lista[j] < lista[index_menor]:
+                index_menor = j
+        lista[i], lista[index_menor] = lista[index_menor], lista[i]
+    return lista
+
+lista_3 = [10, 9, 50, 100, 6, 45, 53, 65, 0, 12, 28, -3]
+
+lista_impressao = ordenar_selecao(lista_3)
+
+print('Lista Ordenada de ordem n: ',lista_impressao)
+
+
+print( '\n--------------------------------\nOrdenação por BOLHA\n','-----------------------------\n')
+def ordenar_bubbleShort (lista):
+    n = len(lista)
+
+    for i in range(n-1):
+        for j in range(n-1):
+            if lista[j] > lista[j+1]:
+                lista[j], lista[j+1] = lista[j+1], lista[j]
+    return lista
+
+lista_4 = [12, 9, 55, 120, 6, 35, 55, 66, 0, 19, 25, -6]
+
+lista_impressao = ordenar_bubbleShort(lista_4)
+print('Lista ordenada pelo BUBBLE SHORT: ', lista_impressao, '\n')
+
+print( '\n--------------------------------\nOrdenação por INSERÇÃO\n','-----------------------------\n')
+
+def ordenacao_insercao(lista):
+    n = len(lista)
+    for i in range(1, n):
+        valor_inserir = lista[i]
+        j = i -1
+
+        while j >= 0 and lista[j] > valor_inserir:
+            lista[j + 1] = lista[j]
+            j = j-1
+        lista[j + 1] = valor_inserir
+    return lista
+
+lista_5 = [13, 8, 25, 130, 6, 35, 55, 77, 0, -9, 15, -6, 99]
+
+lista_impressao = ordenacao_insercao(lista_5)
+
+print('\n Lista por inserção: ', lista_impressao, '\n')
