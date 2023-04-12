@@ -121,6 +121,26 @@ def create_report():
 create_report()
 
 
+print('\nImprime string por passos\nFatiamento de string, a string fatiada não possui relação com a string usada para fatiar\n')
+print(minha_string[::2])
+
+class printer():
+    _colors_ = {
+        **dict.fromkeys(("RED", "ERROR", "NO"), "\033[1;31m"),
+        **dict.fromkeys(("GREEN", "OK", "YES"), "\033[0;32m"),
+        **dict.fromkeys(("YELLOW", "WARN", "MAYBE"), "\033[0;93m"),
+        "BLUE": "\033[1;34m",
+        "CYAN": "\033[1;36m",
+        "RESET": "\033[0;0m",
+        "BOLD": "\033[;1m",
+        "REVERSE": "\033[;7m"
+    }
+
+meu_dic = {
+    "VERMELHO": "\033[1;31m ", 2:"c" , "?":"USUARIO INCORRETO"
+}
+
+print("\033[1;34m" + 'AZUL' + "\033[;7m" + 'TESTE DE CORES')
 
 
 

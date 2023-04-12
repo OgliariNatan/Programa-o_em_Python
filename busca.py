@@ -1,7 +1,9 @@
 '''
     Algoritimos de buscas
 '''
-
+import requests
+import pandas as pd
+import basedosdados as bd
 lista = [10, 4, 15, -3]
 print('Lista não ordenada: ',lista)
 
@@ -84,3 +86,30 @@ lista_5 = [13, 8, 25, 130, 6, 35, 55, 77, 0, -9, 15, -6, 99]
 lista_impressao = ordenacao_insercao(lista_5)
 
 print('\n Lista por inserção: ', lista_impressao, '\n')
+
+'''
+df = bd.read_table(data_id='br-inep-ideb',
+table_id = 'brasil',
+billing_project_id = "busca")'''
+
+#https://httpbin.org/forms/post
+#http://voos.infraero.gov.br/hstvoos/RelatorioPortal.aspx
+#https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL
+
+info = requests.get('https://httpbin.org/forms/post')
+dados1 = info.text
+#dados2 = info.json()
+print(type(dados1))
+#print(type(dados2))
+
+dados = requests.get('https://www.tjsc.jus.br/')
+dados3 = requests.status_codes
+
+print(type(dados))
+
+print(dados3)
+#print(dados.json())
+print('TESTANDO A CONEXÃO: ' + str(dados.status_code)) #Verifica a conexção
+#print(dados.text) #Exibe o código fonte.
+print(dados.headers)
+
