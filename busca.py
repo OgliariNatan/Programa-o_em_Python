@@ -102,7 +102,7 @@ dados1 = info.text
 print(type(dados1))
 #print(type(dados2))
 
-dados = requests.get('https://www.tjsc.jus.br/')
+dados = requests.get('https://alunodigitalead.unopar.br/ead_unopar')
 dados3 = requests.status_codes
 
 print(type(dados))
