@@ -112,4 +112,3 @@ print(dados3)
 print('TESTANDO A CONEXÃO: ' + str(dados.status_code)) #Verifica a conexção
 #print(dados.text) #Exibe o código fonte.
 print(dados.headers)
-
