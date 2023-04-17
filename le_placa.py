@@ -3,10 +3,10 @@ import pytesseract
 from PIL import Image
 import string
 import re
-
-
-
-
+import numpy as np
+###Instancia o pytesseract
+caminho = r"C:\Program Files\Tesseract-OCR"
+pytesseract.pytesseract.tesseract_cmd = caminho + r'\tesseract.exe'
 
 img2 = cv2.imread("placa-carro.jpg")
 img = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
@@ -21,18 +21,9 @@ cv2.waitKey(0)
 print( 'PIXEL DA IMAGEM: ' + str(img))
 
 print('\n\n\nUSO DA BIBLIOTECA TESSERACT')
-"""
-#caminho = C:\Program Files\Tesseract-OCR\tesseract.exe
-pytesseract.pytesseract.tesseract_cmd = 'C:\Program Files\Tesseract-OCR\tesseract.exe'
-img3 = cv2.imread("texto.jpg")
-texto = pytesseract.image_to_string(img3)
-print(texto)
-"""
-imagem = cv2.imread("placa-carro.jpg")
 
-caminho = r"C:\Program Files\Tesseract-OCR"
-#pytesseract.pytesseract.tesseract_cmd = caminho + r'\tesseract.exe'
-pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
-texto = pytesseract.image_to_string(imagem)
+
+imagem = cv2.imread("print.jpg")
+texto = pytesseract.image_to_string(imagem, lang='por')
 print('Lido: ' + texto)
 print('FIM')
