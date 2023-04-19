@@ -25,6 +25,6 @@ print('\n\n\nUSO DA BIBLIOTECA TESSERACT')
 texto1 = pytesseract.image_to_string(img, lang='por')
 print( 'Lido a placa:' + texto1)
 
-imagem = cv2.imread("print.jpg")
+imagem = cv2.imread("print_1.jpg")
 texto = pytesseract.image_to_string(imagem, lang='por')
 print(texto)
