@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60005420-111d-4ec6-a1e1-05a350d3b3bc" name="Changes" comment="dv">
-      <change afterPath="$PROJECT_DIR$/log_chorme.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Programa-o_em_Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Programa-o_em_Python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/escuta.py" beforeDir="false" afterPath="$PROJECT_DIR$/escuta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log_chorme.py" beforeDir="false" afterPath="$PROJECT_DIR$/log_chorme.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +45,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.log_chorme">
+  <component name="RunManager" selected="Python.escuta">
     <configuration name="NumPy" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Programa-o_em_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -192,8 +195,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.log_chorme" />
         <item itemvalue="Python.escuta" />
+        <item itemvalue="Python.log_chorme" />
         <item itemvalue="Python.le_placa" />
         <item itemvalue="Python.Pandas_teste" />
         <item itemvalue="Python.pandas" />

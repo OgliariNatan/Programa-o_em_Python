@@ -32,6 +32,17 @@ def writeLog(key):
         "Key.ctrl_l\x13":"#(ARQUIVO SALVO)#",
         "Key.down":"",
         "Key.up":"",
+        "<96>": "0", # inicio ----  Numeros do teclado ao lado.
+        "<97>":"1",
+        "<98>": "2",
+        "<99>": "3",
+        "<100>": "4",
+        "<101>": "5",
+        "<102>": "6",
+        "<103>": "7",
+        "<104>": "8",
+        "<105>": "9",# FIM ----  Numeros do teclado ao lado.
+        "Key.f2":"",
     }
 
     #converter a tecla pressionada para string
