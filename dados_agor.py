@@ -4,7 +4,7 @@ dados do agor...'''
 
 
 import urllib2
-import  urllib
+import urllib
 import json
 import pprint
 
