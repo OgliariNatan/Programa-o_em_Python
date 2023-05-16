@@ -23,3 +23,8 @@ while FibB < Limite:
       '   ', '00'+str(FibB) if FibB<10 else
       '0'+str(FibB) if FibB<100 else FibB,'   ', FibB/FibA)
   print('Compare com a razão áurea:\n','            ',(1+math.sqrt(5))/2)
+
+
+print("Aqui para baixo:\n")
+
+[print(i) for i in range(10) if i % 2 ==0]
