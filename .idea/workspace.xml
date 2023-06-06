@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60005420-111d-4ec6-a1e1-05a350d3b3bc" name="Changes" comment="atualizado o teclado numerico na lateral do teclado">
-      <change afterPath="$PROJECT_DIR$/text-to-speaks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text-to-speaks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "C:/Users/AULA-1/Documents/(Engenharia de Software)/Fase 1/Linguagem de Programação/Programa-o_em_Python",
-    "settings.editor.selected.configurable": "advanced.settings"
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">

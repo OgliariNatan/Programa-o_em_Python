@@ -4,7 +4,7 @@ import pyttsx3
 engine = pyttsx3.init()
 
 #text to he speaks
-text = "Uma pão de batata muito louco"
+text = "Um pão de batata muito louco"
 
 #to speak
 
