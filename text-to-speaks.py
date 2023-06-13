@@ -19,7 +19,7 @@ engine.setProperty("rate", 250)
 engine.setProperty("volume", 1.5)
 time.sleep(2)
 #text to he speaks
-text = "Bem vindo a conversação em python\n Um pão de batata muito louco. \n A prática leva a perfeição"
+text = "Bem vindo a conversação em python\n Um pão de batata muito louco. \n A prática leva a perfeição."
 
 #to speak
 engine.say(text)
